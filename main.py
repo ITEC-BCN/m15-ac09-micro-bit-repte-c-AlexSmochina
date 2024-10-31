@@ -10,10 +10,6 @@ radio.onReceivedNumber(function (receivedNumber) {
 input.onButtonPressed(Button.A, function () {
     radio.sendString("Hello")
 })
-input.onButtonPressed(Button.AB, function () {
-    numero_enviar = randint(1, 6)
-    radio.sendNumber(numero_enviar)
-})
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
 })
@@ -25,6 +21,5 @@ input.onButtonPressed(Button.B, function () {
         numero = 0
     }
 })
-let numero_enviar = 0
 let numero = 0
 radio.setGroup(10)
